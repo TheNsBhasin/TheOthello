@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="in.codingninjas.theothello.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mainLayout" >
+
+        <ImageView
+            android:id="@+id/blackImage"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="15dp"
+            android:background="#795548" />
+
+        <ImageView
+            android:id="@+id/blackTurn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/black"
+            android:layout_margin="5dp"
+            android:layout_alignLeft="@id/blackImage" />
+
+        <TextView
+            android:id="@+id/blackScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="50dp"
+            android:layout_alignRight="@+id/blackImage"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <ImageView
+            android:id="@+id/whiteImage"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="15dp"
+            android:background="#795548" />
+
+        <ImageView
+            android:id="@+id/whiteTurn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white"
+            android:layout_margin="5dp"
+            android:layout_alignLeft="@+id/whiteImage" />
+
+        <TextView
+            android:id="@+id/whiteScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="50dp"
+            android:layout_alignRight="@+id/whiteImage"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true" >
+
+    </LinearLayout>
+
+</RelativeLayout>
